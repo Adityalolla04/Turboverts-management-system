@@ -70,15 +70,17 @@ git push origin [your-branch-name]
 
 ## Files in This Repository
 
+- **`README.md`** - This file (quick start guide)
+- **`QUICK_REFERENCE.md`** - Quick troubleshooting cheatsheet with common commands
 - **`GITHUB_CODE_REFLECTION_GUIDE.md`** - Comprehensive guide with detailed explanations
 - **`check-github-sync.sh`** - Automated script to check sync status
-- **`README.md`** - This file (quick start guide)
 
 ## Need Help?
 
-1. Read the full guide: [`GITHUB_CODE_REFLECTION_GUIDE.md`](./GITHUB_CODE_REFLECTION_GUIDE.md)
-2. Run the checker script: `./check-github-sync.sh`
-3. Check the troubleshooting section in the guide
+1. Check the quick reference: [`QUICK_REFERENCE.md`](./QUICK_REFERENCE.md)
+2. Read the full guide: [`GITHUB_CODE_REFLECTION_GUIDE.md`](./GITHUB_CODE_REFLECTION_GUIDE.md)
+3. Run the checker script: `./check-github-sync.sh`
+4. Check the troubleshooting section in the guide
 
 ## Understanding Git Workflow
 
