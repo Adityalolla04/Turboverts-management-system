@@ -179,13 +179,13 @@ Time  │  Your Actions                    │  Git State               │  On 
 git status
 
 # See what's different from GitHub
-git diff origin/$(git branch --show-current)
+git diff origin/$(git rev-parse --abbrev-ref HEAD)
 
 # See unpushed commits
-git log origin/$(git branch --show-current)..HEAD
+git log origin/$(git rev-parse --abbrev-ref HEAD)..HEAD
 
 # Push everything
-git push origin $(git branch --show-current)
+git push origin $(git rev-parse --abbrev-ref HEAD)
 
 # Or just use our script!
 ./check-github-sync.sh
