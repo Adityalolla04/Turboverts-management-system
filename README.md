@@ -23,6 +23,10 @@ This script will:
 
 Follow the comprehensive guide in [`GITHUB_CODE_REFLECTION_GUIDE.md`](./GITHUB_CODE_REFLECTION_GUIDE.md)
 
+### Option 3: Visual Learning
+
+Check out the visual diagrams and flowcharts in [`VISUAL_GUIDE.md`](./VISUAL_GUIDE.md)
+
 ### Quick Manual Check
 
 Run these commands in sequence:
@@ -72,6 +76,7 @@ git push origin [your-branch-name]
 
 - **`README.md`** - This file (quick start guide)
 - **`QUICK_REFERENCE.md`** - Quick troubleshooting cheatsheet with common commands
+- **`VISUAL_GUIDE.md`** - Visual diagrams and flowcharts explaining the Git workflow
 - **`GITHUB_CODE_REFLECTION_GUIDE.md`** - Comprehensive guide with detailed explanations
 - **`check-github-sync.sh`** - Automated script to check sync status
 
