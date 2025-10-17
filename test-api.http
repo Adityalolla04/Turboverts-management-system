@@ -1,0 +1,46 @@
+### Test TurboVets API
+
+### 1. Health Check
+GET http://localhost:3000/api
+
+### 2. Login (you need to create a user first - see seed-data.ts)
+POST http://localhost:3000/api/auth/login
+Content-Type: application/json
+
+{
+  "email": "owner@turbovets.com",
+  "password": "password123"
+}
+
+### 3. Create Task (replace YOUR_JWT_TOKEN with the token from login response)
+POST http://localhost:3000/api/tasks
+Content-Type: application/json
+Authorization: Bearer YOUR_JWT_TOKEN
+
+{
+  "title": "Complete patient checkup",
+  "description": "Annual checkup for Max the dog",
+  "category": "Veterinary"
+}
+
+### 4. Get All Tasks
+GET http://localhost:3000/api/tasks
+Authorization: Bearer YOUR_JWT_TOKEN
+
+### 5. Get Single Task
+GET http://localhost:3000/api/tasks/1
+Authorization: Bearer YOUR_JWT_TOKEN
+
+### 6. Update Task
+PUT http://localhost:3000/api/tasks/1
+Content-Type: application/json
+Authorization: Bearer YOUR_JWT_TOKEN
+
+{
+  "status": "InProgress",
+  "description": "Updated description"
+}
+
+### 7. Delete Task (only Owner/Admin can do this)
+DELETE http://localhost:3000/api/tasks/1
+Authorization: Bearer YOUR_JWT_TOKEN

@@ -7,6 +7,7 @@
     "moduleResolution": "node",
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
+    "strictPropertyInitialization": false,
     "importHelpers": true,
     "target": "es2015",
     "module": "esnext",
@@ -14,7 +15,10 @@
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
-    "paths": {}
+    "paths": {
+      "@turbovets-assessment/auth": ["auth/src/index.ts"],
+      "@turbovets-assessment/data": ["data/src/index.ts"]
+    }
   },
   "exclude": ["node_modules", "tmp"]
 }
